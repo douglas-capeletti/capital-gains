@@ -1,20 +1,20 @@
-package com.nubank.adapters.json;
+package com.nubank.infrastructure.objectParsers;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.Version;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.nubank.adapters.ObjectParser;
 import com.nubank.domain.ResultTax;
 import com.nubank.domain.Transaction;
+import com.nubank.application.ObjectParser;
 
 import java.util.List;
 
-public class JacksonAdapter implements ObjectParser {
+public class JsonAdapter implements ObjectParser {
 
     private final ObjectMapper mapper;
 
-    public JacksonAdapter() {
+    public JsonAdapter() {
         SimpleModule module = new SimpleModule("CustomParsers", new Version(1, 0, 0, null, null, null));
         module.addDeserializer(Transaction.class, new TransactionDeserializer());
         module.addSerializer(ResultTax.class, new ResultSerializer());

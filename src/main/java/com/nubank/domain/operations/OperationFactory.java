@@ -1,4 +1,4 @@
-package com.nubank.useCases;
+package com.nubank.domain.operations;
 
 import com.nubank.domain.Operation;
 

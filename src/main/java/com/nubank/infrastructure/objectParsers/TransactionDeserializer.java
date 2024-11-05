@@ -1,4 +1,4 @@
-package com.nubank.adapters.json;
+package com.nubank.infrastructure.objectParsers;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.ObjectCodec;

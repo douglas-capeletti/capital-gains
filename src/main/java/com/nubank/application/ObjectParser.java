@@ -1,4 +1,4 @@
-package com.nubank.adapters;
+package com.nubank.application;
 
 import java.util.List;
 

@@ -1,7 +1,9 @@
 package com.nubank.domain;
 
-import com.nubank.application.SimulationState;
+import java.util.function.Supplier;
 
 public interface Operation {
-    void run(SimulationState state, Transaction transaction);
+    double TAX_RATE = 0.2;
+    double NO_TAX_LIMIT_VALUE = 20_000;
+    Supplier<SimulationState> run(SimulationState state, Transaction transaction);
 }

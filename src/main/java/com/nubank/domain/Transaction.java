@@ -1,6 +1,6 @@
 package com.nubank.domain;
 
-import com.nubank.useCases.OperationFactory;
+import com.nubank.domain.operations.OperationFactory;
 
 public class Transaction {
 
